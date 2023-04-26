@@ -252,15 +252,24 @@ def add_filename_to_function(filename, functionname):
     else:
         return filename + '.' + functionname
 
+def show_more_dangerous_function():
+    print("[+] more dangerous functions")
+    for fun in dangerous_functions:
+        if 'sym.imp' in fun:
+            fun = fun.replace('sym.imp', 'sym')
+            print('[' + add_colour(function_to_library[fun], 'cyan') + '] ' + add_colour(fun, 'yellow'))
+
 if __name__ == '__main__':
 
     parser = argparse.ArgumentParser(description="[+] fdcalls !")
     parser.add_argument('-p', '--path', type=str, default='')
     parser.add_argument('-a', '--arch', type=str, default='')
+    parser.add_argument('-l', '--level', type=int, default=0)
     args = parser.parse_args()
 
     target_filepath = args.path
     architecture = args.arch
+    level = args.level
     
     if target_filepath == ''or architecture == '':
         print('./dcalls.py -p [relative/path/to/bin ] -a [arch]')
@@ -354,4 +363,7 @@ if __name__ == '__main__':
     for s in command_injection_addr:
         print(s)
     print("[+] fdcalls finish")
+    
+    if level:
+        show_more_dangerous_function()
 
