@@ -1,6 +1,6 @@
 # fdcalls
 
-user: fxc
+author: fxc
 
 ## introduction
 
