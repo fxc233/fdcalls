@@ -237,7 +237,7 @@ def find_command_injection(r2fd, filename):
                         else:
                             func_chain+= add_colour(f, 'yellow')
                             cnt+= 1
-                    print(func_chain)
+                    #print(func_chain)
                     cmdinjection.append(func_chain)
 
                     #print(fun + f'({addr}) ->' + func)
@@ -351,7 +351,7 @@ if __name__ == '__main__':
 
     print("[*] Searching dangerous called in binary ...")
     command_injection_addr = find_command_injection(r2_fd[target_filepath], target_filepath)
-    #for s in command_injection_addr:
-    #    print(s, end = '')
+    for s in command_injection_addr:
+        print(s)
     print("[+] fdcalls finish")
 
