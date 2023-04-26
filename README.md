@@ -13,7 +13,7 @@ Welcome to provide suggestions.
 ## Usage
 
 ```shell
-./dcalls.py -p [relative/path/to/bin ] -a [arch]
+./dcalls.py -p [relative/path/to/bin ] -a [arch] -l [level=0]
 ```
 
 ## prerequisites
