@@ -272,7 +272,7 @@ if __name__ == '__main__':
     level = args.level
     
     if target_filepath == ''or architecture == '':
-        print('./dcalls.py -p [relative/path/to/bin ] -a [arch]')
+        print('./dcalls.py -p [relative/path/to/bin ] -a [arch] -l [level]')
         exit(0)
     
     init()
