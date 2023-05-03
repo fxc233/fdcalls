@@ -25,3 +25,7 @@ pip install r2pipe
 ## results
 
 ![1](./img/1.png)
+
+## related articles
+
+[https://www.cnblogs.com/pwnfeifei/p/17369551.html](https://www.cnblogs.com/pwnfeifei/p/17369551.html)
