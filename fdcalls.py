@@ -53,7 +53,7 @@ def init():
          888    d88' `888  d88' `"Y8 `P  )88b   888   888  d88(  "8 
          888    888   888  888        .oP"888   888   888  `"Y88b.  
          888    888   888  888   .o8 d8(  888   888   888  o.  )88b 
-        o888o   `Y8bod88P" `Y8bod8P' `Y888""8o o888o o888o 8""888P'   author:fxc  version:1.0
+        o888o   `Y8bod88P" `Y8bod8P' `Y888""8o o888o o888o 8""888P'   author:fxc  version:1.1
                                                             
     """)
 
@@ -257,7 +257,8 @@ def show_more_dangerous_function():
     for fun in dangerous_functions:
         if 'sym.imp' in fun:
             fun = fun.replace('sym.imp', 'sym')
-            print('[' + add_colour(function_to_library[fun], 'cyan') + '] ' + add_colour(fun, 'yellow'))
+            if fun in function_to_library.keys():
+            	print('[' + add_colour(function_to_library[fun], 'cyan') + '] ' + add_colour(fun, 'yellow'))
 
 if __name__ == '__main__':
 
@@ -272,7 +273,7 @@ if __name__ == '__main__':
     level = args.level
     
     if target_filepath == ''or architecture == '':
-        print('./dcalls.py -p [relative/path/to/bin ] -a [arch] -l [level]')
+        print('./dcalls.py -p [relative/path/to/bin ] -a [arch]')
         exit(0)
     
     init()
@@ -317,6 +318,7 @@ if __name__ == '__main__':
             function_to_library[fun] = lib
     #print(functions_self_defined['./bin/pucfu'])
     #print(functions_self_defined)
+    #print(function_to_library)
     print("[+] Identifying functions success")
     
     print("[*] Enumerateing call paths in libraries ...")
