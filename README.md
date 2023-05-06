@@ -2,6 +2,10 @@
 
 author: fxc
 
+## version
+
+latest: v1.1
+
 ## introduction
 
 **fdcalls** purpose is to help security researchers view dangerous function calls across files.
