@@ -1,10 +1,10 @@
 # fdcalls
 
-author: fxc
+**author: fxc**
 
 ## version
 
-latest: v1.1
+latest: v1.2
 
 ## introduction
 
@@ -17,18 +17,24 @@ Welcome to provide suggestions.
 ## Usage
 
 ```shell
-./dcalls.py -p [relative/path/to/bin ] -a [arch] -l [level=0]
+fdcalls -p [path/to/target_binary] -f [path/to/file_system_dir] -a [arch] -l [level=0]
 ```
 
-## prerequisites
+## Setup
 
 ```shell
-pip install r2pipe
+git clone https://github.com/fxc233/fdcalls
+cd fdcalls
+python3 setup.py install
 ```
 
 ## results
 
 ![1](./img/1.png)
+
+## contact
+
+FXC030618@outlook.com
 
 ## related articles
 
