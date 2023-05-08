@@ -25,7 +25,7 @@ fdcalls -p [path/to/target_binary] -f [path/to/file_system_dir] -a [arch] -l [le
 ```shell
 git clone https://github.com/fxc233/fdcalls
 cd fdcalls
-python3 setup.py install
+sudo python3 setup.py install
 ```
 
 ## results
