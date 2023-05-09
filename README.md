@@ -22,6 +22,14 @@ fdcalls -p [path/to/target_binary] -f [path/to/file_system_dir] -a [arch] -l [le
 
 ## Setup
 
+first choice，but it may be an old version
+
+```shell
+pip install fdcalls
+```
+
+second choice
+
 ```shell
 git clone https://github.com/fxc233/fdcalls
 cd fdcalls
