@@ -78,15 +78,6 @@ def get_path_by_filename(filename, file_system_path):
 
 # Obtain relevant dynamic link library names
 def get_dynamic_libraries(r2fd, file_system_path):
-    '''
-    output = subprocess.check_output(['readelf', '-d', target_file_path]).decode('utf-8')
-    libraries = []
-    for line in output.split('\n'):
-        if 'Shared library' in line:
-            library = line.split('[')[-1].split(']')[0]
-            library = get_path_by_filename(library, file_system_path)
-            libraries.append(library)
-    '''
     libraries = []
     libs = r2fd.cmdj('ilj')
     for lib in libs:
