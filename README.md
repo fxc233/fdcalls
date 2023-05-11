@@ -4,7 +4,7 @@
 
 ## Version
 
-latest: v1.2
+latest: v1.3
 
 ## Introduction
 
@@ -17,7 +17,7 @@ Welcome to provide suggestions.
 ## Usage
 
 ```shell
-fdcalls -p [path/to/target_binary] -f [path/to/file_system_dir] -a [arch] -l [level=0]
+fdcalls -b [path/to/target_binary] -d [path/to/file_system_dir] -l [level=0]
 ```
 
 ## Setup
