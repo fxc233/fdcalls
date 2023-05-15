@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(name='fdcalls',
-    version='1.3',
+    version='1.4',
     description='help view dangerous function calls across files',
     author='fxc',
     author_email='FXC030618@outlook.com',
