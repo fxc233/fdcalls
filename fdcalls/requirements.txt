@@ -1,2 +1,0 @@
-r2pipe==1.8.0
-setuptools==45.2.0
