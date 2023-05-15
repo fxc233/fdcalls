@@ -4,7 +4,7 @@
 
 ## Version
 
-latest: v1.3
+latest: v1.4
 
 ## Introduction
 
@@ -18,6 +18,12 @@ Welcome to provide suggestions.
 
 ```shell
 fdcalls -b [path/to/target_binary] -d [path/to/file_system_dir] -l [level=0]
+```
+
+## Dependencies
+
+```shell
+sudo apt-get install gcc-arm-linux-gnueabi
 ```
 
 ## Setup
